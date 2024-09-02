@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fonts_array">
+        <item>Arial</item>
+        <item>Times New Roman</item>
+        <item>Roboto</item>
+        <item>Montserrat</item>
+        <item>Open Sans</item>
+        <item>Lato</item>
+        <item>Source Sans Pro</item>
+        <item>Roboto Condensed</item>
+        <item>PT Sans</item>
+        <item>Noto Sans</item>
+        <item>Ubuntu</item>
+        <item>Raleway</item>
+        <item>Oswald</item>
+        <item>Merriweather</item>
+        <item>Poppins</item>
+        <item>Playfair Display</item>
+        <item>Georgia</item>
+        <item>Palatino Linotype</item>
+        <item>Verdana</item>
+        <item>Trebuchet MS</item>
+    </string-array>
+</resources>

@@ -1,0 +1,42 @@
+<!-- res/layout/item_author.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/buttonTint"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginHorizontal="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:contentPadding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileTv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/account_circle_black"
+            app:strokeColor="@color/mainPageText"
+            app:strokeWidth="1dp"
+            app:shapeAppearance="@style/styleCircleImage"/>
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/profileTv"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/poetsen_one_regular"
+            android:text="@string/author_name"
+            android:textSize="18sp"
+            android:textColor="@color/mainPageText" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

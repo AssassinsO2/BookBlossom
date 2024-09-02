@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_rect"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:padding="5dp"
+        android:text="@string/add_review"
+        android:textAlignment="center"
+        android:textColor="@color/mainPageText"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reviewTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/white"
+        app:boxStrokeWidth="2dp"
+        app:cursorColor="@color/mainPageText"
+        app:cursorErrorColor="@color/mainPageText"
+        app:hintTextColor="@color/mainPageText"
+        app:helperTextTextColor="@color/error"
+        android:hint="@string/review"
+        app:startIconDrawable="@drawable/baseline_comment_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reviewEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outlined_text_view"
+            android:fontFamily="@font/poetsen_one_regular"
+            android:inputType="textCapSentences|textImeMultiLine"
+            android:paddingStart="50dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reviewTil"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/outlined_button"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:text="@string/submit"
+        android:textColor="@color/mainPageText"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+</RelativeLayout>

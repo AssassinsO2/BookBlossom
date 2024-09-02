@@ -1,0 +1,11 @@
+<!-- res/drawable/custom_star_half.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background"
+        android:drawable="@drawable/custom_star_empty" />
+    <item>
+        <clip android:drawable="@drawable/custom_star"
+            android:clipOrientation="horizontal"
+            android:gravity="left"
+            android:level="5000" />
+    </item>
+</layer-list>

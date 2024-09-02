@@ -1,0 +1,42 @@
+<!-- res/layout/fragment_app_info.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/menu_background">
+
+    <TextView
+        android:id="@+id/textAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mainPageText"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:text="@string/book_blossom"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/textAppVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/version"
+        android:textColor="@color/mainPageText"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you_have_the_latest_version"
+        android:textColor="@color/mainPageText"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+</LinearLayout>

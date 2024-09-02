@@ -1,0 +1,38 @@
+<!-- res/values/styles.xml -->
+<resources>
+    <style name="CustomRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar</item>
+        <item name="android:minHeight">12dp</item>
+        <item name="android:maxHeight">12dp</item>
+    </style>
+
+    <!---theme for circle image-->
+    <style name="styleCircleImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ReviewDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="UpdateDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="theme">@style/Base.Theme.temp</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/splash_background</item>
+    </style>
+
+    <!-- Custom style for error text -->
+    <style name="CustomErrorStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/poetsen_one_regular</item>
+        <item name="android:textColor">@color/error</item> <!-- Set your desired text color -->
+        <item name="android:textSize">12sp</item> <!-- Adjust text size if needed -->
+    </style>
+</resources>

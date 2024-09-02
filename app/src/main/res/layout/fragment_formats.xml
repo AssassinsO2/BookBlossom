@@ -1,0 +1,33 @@
+<!-- res/layout/fragment_formats.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+    android:orientation="vertical">
+
+    <!-- Example TextView -->
+    <TextView
+        android:id="@+id/text_formats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fonts"
+        android:textSize="30sp"
+        android:textColor="@color/mainPageText"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="44dp"/>
+
+    <!-- ListView to display fonts -->
+    <ListView
+        android:id="@+id/font_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textColor="@color/mainPageText"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:layout_marginTop="16dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+</LinearLayout>

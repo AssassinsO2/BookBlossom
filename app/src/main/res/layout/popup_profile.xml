@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_dialog_background"
+    android:theme="@style/Base.Theme.temp">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/account_circle_black"
+        android:contentDescription="@string/profile_picture" />
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:textSize="16sp"
+        android:textColor="@color/mainPageText"
+        android:layout_marginTop="8dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_name_template"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:textSize="18sp"
+        android:textColor="@color/mainPageText"
+        android:layout_marginTop="4dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/manage_account_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mainPageText"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:text="Manage your Account"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mainPageText"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:text="Sign out"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

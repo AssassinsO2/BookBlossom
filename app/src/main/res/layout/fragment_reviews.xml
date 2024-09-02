@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/buttonTint"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/reviewsLabelTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poetsen_one_regular"
+                android:padding="10dp"
+                android:text="@string/reviews"
+                android:textColor="@color/mainPageText"
+                android:textSize="16sp"/>
+
+            <ImageButton
+                android:id="@+id/addReviewBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/add_review"
+                android:padding="10dp"
+                android:src="@drawable/ic_comment" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reviewsRv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/description"
+                android:backgroundTint="@android:color/transparent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/row_review"
+                android:layout_below="@id/addReviewBtn">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

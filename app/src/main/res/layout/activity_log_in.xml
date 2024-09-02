@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:background="@drawable/main_background">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <TextView
+            android:id="@+id/main_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="140dp"
+            android:gravity="center"
+            android:fontFamily="@font/poetsen_one_regular"
+            android:text="@string/login"
+            android:textColor="@color/mainPageText"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/email"
+            android:textColorHint="@color/white"
+            app:boxStrokeErrorColor="@color/mainPageText"
+            app:boxStrokeWidth="2dp"
+            app:cursorColor="@color/mainPageText"
+            app:cursorErrorColor="@color/mainPageText"
+            app:hintTextColor="@color/mainPageText"
+            app:helperTextTextAppearance="@style/CustomErrorStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="emailAddress">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/outlined_text_view"
+                android:fontFamily="@font/poetsen_one_regular"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp"
+                android:textColor="@color/mainPageText"
+                android:autofillHints="emailAddress"
+                tools:ignore="RtlSymmetry,VisualLintTextFieldSize,TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/password"
+            android:textColorHint="@color/white"
+            app:boxStrokeErrorColor="@color/mainPageText"
+            app:boxStrokeWidth="2dp"
+            app:cursorColor="@color/mainPageText"
+            app:cursorErrorColor="@color/mainPageText"
+            app:hintTextColor="@color/mainPageText"
+            app:helperTextTextAppearance="@style/CustomErrorStyle"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/outlined_text_view"
+                android:fontFamily="@font/poetsen_one_regular"
+                android:inputType="textPassword"
+                android:paddingStart="20dp"
+                android:textColor="@color/mainPageText"
+                tools:ignore="RtlSymmetry,VisualLintTextFieldSize,TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logIn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/outlined_button"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:soundEffectsEnabled="true"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/mainPageText"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.333"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/xyz"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/outlined_button"
+        android:fontFamily="@font/poetsen_one_regular"
+        android:paddingHorizontal="20dp"
+        android:soundEffectsEnabled="true"
+        android:text="@string/forgot_password"
+        android:textAllCaps="false"
+        android:textColor="@color/mainPageText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

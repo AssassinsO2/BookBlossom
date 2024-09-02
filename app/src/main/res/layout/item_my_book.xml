@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <FrameLayout
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:background="@android:color/transparent">
+
+        <ImageButton
+            android:id="@+id/book_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@drawable/book_image_background"
+            android:src="@drawable/ic_book_placeholder" />
+
+        <ProgressBar
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <!-- Book Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <!-- Book Name -->
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/book_name"
+                android:textStyle="bold"
+                android:fontFamily="@font/poetsen_one_regular"
+                android:textSize="20sp"
+                android:textColor="@color/mainPageText" />
+
+            <!-- Book Author -->
+            <TextView
+                android:id="@+id/book_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/author_name"
+                android:textSize="18sp"
+                android:fontFamily="@font/poetsen_one_regular"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/author" />
+
+            <!-- Book Genre and Rating -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <!-- Book Genre -->
+                <TextView
+                    android:id="@+id/book_genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/genre"
+                    android:fontFamily="@font/poetsen_one_regular"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/holo_blue_dark" />
+
+                <!-- Book Rating Points -->
+                <TextView
+                    android:id="@+id/book_rating_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poetsen_one_regular"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <!-- View PDF Button -->
+                <Button
+                    android:id="@+id/button_view_pdf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_pdf"
+                    android:backgroundTint="@color/buttonTint"
+                    android:fontFamily="@font/poetsen_one_regular"
+                    android:textColor="@color/mainPageText"
+                    android:layout_weight="1"
+                    android:onClick="viewPdf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/button_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:text="@string/delete"
+                    android:fontFamily="@font/poetsen_one_regular"
+                    android:textColor="@color/mainPageText"
+                    android:backgroundTint="@color/buttonTint"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/button_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit"
+                    android:fontFamily="@font/poetsen_one_regular"
+                    android:textColor="@color/mainPageText"
+                    android:backgroundTint="@color/buttonTint"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
