@@ -6,7 +6,7 @@
     android:layout_marginBottom="5dp"
     app:cardBackgroundColor="@color/buttonTint"
     app:cardCornerRadius="5dp"
-    android:elevation="0dp"
+    android:elevation="10dp"
     app:contentPadding="5dp"
     android:layout_marginEnd="10dp">
 
